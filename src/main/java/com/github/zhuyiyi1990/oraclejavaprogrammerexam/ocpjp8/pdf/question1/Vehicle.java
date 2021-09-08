@@ -1,4 +1,4 @@
-package com.github.zhuyiyi1990.oraclejavaprogrammerexam.ocpjp8.csdn.question1;
+package com.github.zhuyiyi1990.oraclejavaprogrammerexam.ocpjp8.pdf.question1;
 
 public class Vehicle {
 
