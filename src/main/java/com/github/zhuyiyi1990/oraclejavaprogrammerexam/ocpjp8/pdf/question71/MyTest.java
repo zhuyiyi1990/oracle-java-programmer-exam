@@ -28,9 +28,10 @@ public class MyTest {
             }
             rs.absolute(2);
             System.out.println(rs.getInt(1) + " " + rs.getString(2));
-            rs.updateRow();
+//            rs.updateRow();
         } catch (SQLException | ClassNotFoundException ex) {
             System.out.println("Exception is raised");
+            ex.printStackTrace();
         }
     }
 
