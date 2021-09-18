@@ -11,11 +11,11 @@ public class MyTest {
 
     public static void main(String[] args) throws IOException {
         Path file = Paths.get("courses.txt");
-        //A
+//        A
 //        Stream<Path> fc = Files.list(file);
-        //B
+//        B
 //        List<String> strings = Files.readAllLines(file);
-        //D
+//        D
         Stream<String> fc = Files.lines(file);
         fc.forEach(s -> System.out.println(s));
     }
