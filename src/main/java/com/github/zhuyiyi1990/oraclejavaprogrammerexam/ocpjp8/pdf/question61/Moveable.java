@@ -14,7 +14,7 @@ public interface Moveable<T> {
         animal.run(100);
         animal.walk(20);
         //B
-        /*Moveable<Integer> animal = n -> n + 10);
+        /*Moveable<Integer> animal = n -> n + 10;
         animal.run(100);
         animal.walk(20);*/
         //C
