@@ -10,7 +10,8 @@ public class Birdie {
         fly(Penguin::new);
     }
 
-    static void fly(Supplier<? extends Bird> bird) {
+    static void fly(Supplier<Bird> bird) {
+//    static void fly(Supplier<? extends Bird> bird) {
         bird.get().fly();
     }
 

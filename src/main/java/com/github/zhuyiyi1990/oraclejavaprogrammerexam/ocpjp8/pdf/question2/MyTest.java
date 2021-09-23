@@ -19,6 +19,8 @@ public class MyTest {
 //        C
 //        BiFunction<IntUnaryOperator> inFu = x -> y -> x * y;
         IntStream newStream = stream.map(inFu.apply(10));
+//        D
+//        IntStream newStream = stream.map(inFu.applyAsInt(10));
         newStream.forEach(System.out::println);
     }
 
