@@ -19,6 +19,7 @@ class ImagePrinter implements AutoCloseable {
     @Override
     public void close() throws Exception {
         System.out.print("Printer closed.");
+        throw new Exception("unable to close printer");
     }
 
     public void printImage() {

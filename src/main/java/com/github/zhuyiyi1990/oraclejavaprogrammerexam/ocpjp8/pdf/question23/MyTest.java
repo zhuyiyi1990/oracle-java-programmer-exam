@@ -9,8 +9,8 @@ public class MyTest {
 
     public static void main(String[] args) throws IOException {
         Path source = Paths.get("D:\\temp\\test\\a.txt");
-        Path destination = Paths.get("D:\\temp");
-//        Path destination = Paths.get("D:\\temp\\b.txt");
+//        Path destination = Paths.get("D:\\temp");
+        Path destination = Paths.get("D:\\temp\\b.txt");
         Files.copy(source, destination);
     }
 

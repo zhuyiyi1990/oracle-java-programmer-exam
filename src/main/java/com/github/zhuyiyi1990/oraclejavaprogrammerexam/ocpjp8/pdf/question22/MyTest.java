@@ -9,13 +9,13 @@ public class MyTest {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter GDP:");
-        //A
+//        A
         int GDP = Integer.parseInt(br.readLine());
-        //B
+//        B
 //        int GDP = br.read();
-        //C
+//        C
 //        int GDP = br.nextInt();
-        //D
+//        D
 //        int GDP = Integer.parseInt(br.next());
         System.out.println(GDP);
     }
