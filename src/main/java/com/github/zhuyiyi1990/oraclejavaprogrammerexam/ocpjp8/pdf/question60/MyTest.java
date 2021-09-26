@@ -10,6 +10,8 @@ public class MyTest {
         List<String> nL = Arrays.asList("Jim", "John", "Jeff");
         Function<String, String> funVal = s -> "Hello: ".concat(s);
         nL.stream().map(funVal).peek(System.out::print);
+        System.out.println("----------");
+        nL.stream().map(funVal).peek(System.out::print).forEach(t -> System.out.println());
     }
 
 }

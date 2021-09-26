@@ -11,6 +11,9 @@ public class MyTest {
         UnaryOperator<Double> uo1 = s -> s * 2;
         List<Double> loanValues = Arrays.asList(1000.0, 2000.0);
         loanValues.stream().filter(lv -> lv >= 1500).map(lv -> uo1.apply(lv)).forEach(s -> System.out.print(s + " "));
+        /*UnaryOperator<Double> uo1 = s -> s * 2;
+        List<Integer> loanValues = Arrays.asList(1000, 2000);
+        loanValues.stream().filter(lv -> lv >= 1500).map(lv -> uo1.apply(lv)).forEach(s -> System.out.print(s + " "));*/
     }
 
 }

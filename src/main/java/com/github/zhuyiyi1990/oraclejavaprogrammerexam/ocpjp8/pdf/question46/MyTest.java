@@ -1,7 +1,5 @@
 package com.github.zhuyiyi1990.oraclejavaprogrammerexam.ocpjp8.pdf.question46;
 
-import com.github.zhuyiyi1990.oraclejavaprogrammerexam.ocajp8.csdn2.question104.B;
-
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
