@@ -13,6 +13,17 @@ public class MyFor1 {
         for (int i : x) {
             System.out.print(i + " ");
         }
+        System.out.println();
+        Integer[] y = {6, 7, 8};
+        for (Integer i : y) {
+            i++;
+            System.out.print(i + " ");
+            i++;
+        }
+        System.out.println();
+        for (Integer i : y) {
+            System.out.print(i + " ");
+        }
     }
 
 }
