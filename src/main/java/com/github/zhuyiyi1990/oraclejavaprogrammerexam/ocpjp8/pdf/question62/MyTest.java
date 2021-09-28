@@ -10,6 +10,9 @@ public class MyTest {
 //        Locale loc3 = Locale.getLocaleFactory("RU");
         Locale loc4 = Locale.UK;
         Locale loc5 = new Locale("ru", "RU");
+        Locale locTest = new Locale("ZH", "cn");
+        System.out.println(locTest.getLanguage());
+        System.out.println(locTest.getCountry());
     }
 
 }
