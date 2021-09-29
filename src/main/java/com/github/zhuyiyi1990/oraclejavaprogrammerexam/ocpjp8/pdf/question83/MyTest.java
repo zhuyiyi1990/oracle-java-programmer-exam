@@ -12,6 +12,7 @@ public class MyTest {
         Path res2 = path2.resolve("/readme/");
         System.out.println(res1);
         System.out.println(res2);
+        System.out.println(path1.normalize());
     }
 
 }

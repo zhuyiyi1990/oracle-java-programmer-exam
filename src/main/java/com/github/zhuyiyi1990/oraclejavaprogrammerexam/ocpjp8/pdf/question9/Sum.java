@@ -5,7 +5,7 @@ import java.util.concurrent.RecursiveAction;
 
 public class Sum extends RecursiveAction {
 
-    static final int THRESHOLD_SIZE = 10;
+    static final int THRESHOLD_SIZE = 3;
 
     int stIndex, lstIndex;
 
@@ -20,7 +20,7 @@ public class Sum extends RecursiveAction {
     @Override
     protected void compute() {
 //        System.out.println(Thread.currentThread().getName());
-        System.out.println("stIndex:" + stIndex + ",lstIndex:" + lstIndex);
+//        System.out.println("stIndex:" + stIndex + ",lstIndex:" + lstIndex);
         int sum = 0;
         if (lstIndex - stIndex <= THRESHOLD_SIZE) {
             for (int i = stIndex; i < lstIndex; i++) {
@@ -37,10 +37,10 @@ public class Sum extends RecursiveAction {
 
     public static void main(String[] args) {
         ForkJoinPool fjPool = new ForkJoinPool();
-        int[] data = new int[10000];
-        for (int i = 0; i < data.length; i++) {
+        int[] data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        /*for (int i = 0; i < data.length; i++) {
             data[i] = i + 1;
-        }
+        }*/
         fjPool.invoke(new Sum(data, 0, data.length));
     }
 

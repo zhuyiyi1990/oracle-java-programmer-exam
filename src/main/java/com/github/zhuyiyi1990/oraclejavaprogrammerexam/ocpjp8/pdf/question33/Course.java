@@ -11,6 +11,7 @@ public class Course {
         try (InputStream fis = Course.class.getClassLoader().getResourceAsStream("course.txt"); InputStreamReader isr = new InputStreamReader(fis);) {
             while (isr.ready()) {
                 isr.skip(2);
+//                isr.skip(8);
                 i = isr.read();
                 c = (char) i;
                 System.out.print(c);
